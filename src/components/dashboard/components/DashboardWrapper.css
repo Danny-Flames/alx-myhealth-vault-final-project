@@ -1,0 +1,43 @@
+/* General layout for the dashboard wrapper */
+.dashboard-wrapper {
+    display: flex;
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    margin-left: 240px; /* Space for the sidebar */
+  }
+
+  .dashboard-content-child {
+    padding: 20px;
+  }
+  
+  /* Top Navbar styling */
+  .top-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dadada;
+    background-color: #f8f9fa;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-btn {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #343a40;
+  }
+  
+  .icon-btn:hover {
+    color: #18D26E; 
+  }
+  
+  .content-section {
+    padding: 20px;
+    margin-top: 10px;
+  }
