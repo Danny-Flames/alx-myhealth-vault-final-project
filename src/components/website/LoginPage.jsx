@@ -2,9 +2,6 @@ import React from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import CallToAction from "./CallToAction";
-import Facts from "./Facts";
-import Clients from "./Clients";
-import ContactUs from "./ContactUs";
 import LoginForm from "./reusable/LoginForm";
 
 function LoginPage() {

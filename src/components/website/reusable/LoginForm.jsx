@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { loginUser } from "../../../redux/slices/authSlice";
 
 function LoginForm() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const { loading, error } = useSelector((state) => state.auth);
 
-  // To handle navigation
-  const handleSubmit = (e) => {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = () => {
+    // Dispatch the loginUser thunk
+    // dispatch(loginUser({ email: formData.email, password: formData.password }));
+
     navigate("/dashboard");
   };
 
@@ -19,19 +37,23 @@ function LoginForm() {
                 <input
                   type="email"
                   className="form-control"
-                  name="email"
                   id="email"
                   placeholder="Your Email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
                 />
               </div>
               <div className="form-group col-md-6">
                 <input
                   type="password"
-                  name="password"
                   className="form-control"
                   id="password"
                   placeholder="Password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
                   required
                 />
               </div>
@@ -44,7 +66,11 @@ function LoginForm() {
               </div>
             </div>
             <div className="text-center">
-              <button className="vault-btn" type="button" onClick={handleSubmit}>
+              <button
+                className="vault-btn"
+                type="button"
+                onClick={handleSubmit}
+              >
                 Login
               </button>
             </div>
