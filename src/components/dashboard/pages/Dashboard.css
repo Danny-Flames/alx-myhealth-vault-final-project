@@ -1,0 +1,100 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 23%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.indicator {
+    font-size: 14px;
+    color: #999;
+}
+
+.indicator.up {
+    color: green;
+}
+
+.indicator.down {
+    color: red;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;/*just added*/
+}
+
+.sales, .traffic {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-graph, .traffic-graph {
+    margin-top: 20px;
+    height: 200px;
+    background-color: #e0e0e0; /* Placeholder for graph */
+    border-radius: 8px;
+}
+
+.table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.MuiTableContainer-root {
+    box-shadow: none;
+}
+
+.MuiTable-root {
+    min-width: 650px;
+}
+
+.MuiTableCell-head {
+    background-color: #f0f2f5;
+    font-weight: bold;
+}
+
+.MuiTableCell-body {
+    font-size: 14px;
+}

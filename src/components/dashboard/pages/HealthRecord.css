@@ -1,0 +1,41 @@
+
+.lower-section {
+    margin-top: 4%;
+}
+
+.vault-form {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    width: 40%;
+}
+
+.vault-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.vault-form-row-single {
+    margin-bottom: 20px;
+}
+
+.vault-table-header {
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.vault-image-preview-box {
+    border: 1px solid lightgrey;
+    width: 55%;
+}
+
+.vault-image-preview-box img {
+    width: 100%;
+}
+
+.flex-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

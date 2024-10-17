@@ -1,0 +1,21 @@
+
+.padding-y-added {
+    margin: 140px 0 20px;
+}
+
+button.vault-btn {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+button.vault-btn:hover {
+    background: #13a456;
+  }
+
+a.nav-link.active {
+    background: transparent !important;
+}
