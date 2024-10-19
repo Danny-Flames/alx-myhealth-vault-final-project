@@ -38,7 +38,7 @@ function Profile() {
             color="primary"
             sx={{ backgroundColor: "#1D676B", "&:hover": { backgroundColor: '#2e8b57' }, color: "white" }}
             component={Link}
-            to="/edit-profile"
+            to="/dashboard/editprofile" 
           >
             Edit Profile
           </Button>

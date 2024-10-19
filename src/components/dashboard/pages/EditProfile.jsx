@@ -90,7 +90,7 @@ function EditProfile() {
             <Button
               component="label"
               variant="contained"
-              sx={{ marginRight: "10px" }}
+              sx={{ marginRight: "10px", backgroundColor: "#1D676B", "&:hover": { backgroundColor: '#2e8b57' }, color: "white" }} 
             >
               Change Image
               <VisuallyHiddenInput
@@ -102,10 +102,12 @@ function EditProfile() {
             {file && <Typography>{file.name}</Typography>}
           </Box>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Button variant="outlined" color="secondary">
-              Cancel
+            <Button
+                variant="outlined"
+                sx={{color: 'black', borderColor: "#1D676B", "&:hover": {backgroundColor: '#2e8b57', borderColor: "#2e8b57",} }} >
+                Cancel
             </Button>
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" sx={{ backgroundColor: "#1D676B", "&:hover": { backgroundColor: '#2e8b57' }, color: "white" }}>
               Save Changes
             </Button>
           </Box>
