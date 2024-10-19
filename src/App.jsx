@@ -7,6 +7,7 @@ import ContactPage from "./components/website/ContactPage";
 import HealthRecord from "./components/dashboard/pages/HealthRecord";
 import Settings from "./components/dashboard/pages/Settings";
 import Profile from "./components/dashboard/pages/Profile";
+import EditProfile from "./components/dashboard/pages/EditProfile";
 import Appointments from "./components/dashboard/pages/Appointments";
 import HealthRecordCreate from "./components/dashboard/pages/HealthRecordCreate";
 import HealthRecordView from "./components/dashboard/pages/HealthRecordView";
@@ -43,6 +44,7 @@ function App() {
         <Route path="/dashboard/appointments/reschedule/:id" element={<AppointmentReschedule />} />
         <Route path="/dashboard/medication-tracking" element={<MedicalTracking />} />
         <Route path="/dashboard/profile" element={<Profile />} />
+        <Route path="/dashboard/editprofile" element={<EditProfile />} />
         <Route path="/dashboard/users-management" element={<Settings />} />
       </Routes>
     </BrowserRouter>
